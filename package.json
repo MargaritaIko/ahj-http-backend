@@ -1,0 +1,26 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "HelpDesk",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "npm install",
+    "start": "forever server.js",
+    "watch": "forever -w server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "MargaritaIko",
+  "license": "ISC",
+  "dependencies": {
+    "forever": "^4.0.3",
+    "koa": "^2.14.2",
+    "koa-body": "^5.0.0",
+    "koa-static": "^5.0.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {}
+}
