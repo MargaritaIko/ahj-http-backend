@@ -1,6 +1,7 @@
 const http = require('http');
 const Koa = require('koa');
 const koaBody = require('koa-body');
+const koaCors = require('@koa/cors');
 const app = new Koa();
 const uuid = require('uuid');
 
