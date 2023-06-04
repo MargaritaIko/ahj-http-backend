@@ -5,15 +5,15 @@ const koaCors = require('@koa/cors');
 const app = new Koa();
 const uuid = require('uuid');
 
-const port = process.env.PORT || 7070;
-const server = http.createServer(app.callback()).listen(port)
+const server = http.createServer(app.callback());
+
+const port = 7070;
 server.listen(port, (err) => {
   if (err) {
     return console.log('Error occured:', error);
   }
   console.log(`server is listening on ${port}`);
 });
-//http.createServer(app.callback()).listen(port)
 
 app.use(
   koaBody({
